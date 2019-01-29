@@ -9,7 +9,7 @@ Une écoSonde est constituée de :
 - 2 sondes humidité capacitive
 - capteur de luminosité I2C
 - capteur de distance à ultrason
-- 1 relais
+- 1 relais types JQC-3FF-S-Z 5vdc 15A 125VAC 10amp PCB Relais
 - Bouton TEMPSA TTP223
 - Ecran OLED
 - Batterie Li-Po 3.2 V -4.2 V
