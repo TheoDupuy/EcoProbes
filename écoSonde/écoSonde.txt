@@ -10,7 +10,8 @@ Une écoSonde est constituée de :
 - capteur de luminosité I2C
 - capteur de distance à ultrason
 - 1 relais
-- Bouton/Ecran OLED
+- Bouton TEMPSA TTP223
+- Ecran OLED
 - Batterie Li-Po
 - Panneau solaire
 - breadboard
