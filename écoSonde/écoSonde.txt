@@ -1,0 +1,27 @@
+Une écoSonde est constituée de :
+
+- Microcontroleur STM32 F103C8T6990E993 MYS 525 ( Memoire flash 64ko / SRAM 20ko et 48-pin ) ( Cortex-M3 CPU Core 32bits, 72MHz max fréquence) (  
+- EEPROM 24C64
+- Bornier
+- 2 DS18B20
+- 1DHT12
+- 3 capteurs flotteur
+- 2 sondes humidité capacitive
+- capteur de luminosité I2C
+- capteur de distance à ultrason
+- 1 relais
+- Bouton/Ecran OLED
+- Batterie Li-Po
+- Panneau solaire
+- breadboard
+
+
+
+Microcontroleur STM32 F103C8T6990E993 MYS 525 : 
+
+-Memoire flash 64ko / SRAM 20ko et 48-pin 
+-Cortex-M3 CPU Core 32bits, 72MHz max fréquence
+-3 timers de 16-bits + PWM timer
+-interface comm 2I2C et SPI, 3 USARTs, USB, CAN
+-3.6V
+-CRC unique 96bits
