@@ -12,7 +12,8 @@ Une écoSonde est constituée de :
 - 1 relais
 - Bouton TEMPSA TTP223
 - Ecran OLED
-- Batterie Li-Po
+- Batterie Li-Po 3.2 V -4.2 V
+- regulateur
 - Panneau solaire
 - breadboard
 
