@@ -1,0 +1,3 @@
+En Uml, nous avons fait :
+- la partie analyse grâce au diagramme de cas d'utilisation 
+- la partie analyse/conception avec le diagramme de déploiement d'une ecosonde qui permet d'avoir une vue d'ensemble du projet au niveau des composants.
