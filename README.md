@@ -5,7 +5,7 @@ Projet BTS SNir
 - Référent technique : Nicolas BUSQUET : EcoSondes réseau MESH 
 - Stella DAVION : Application Android 
 - Théo DUPUY : Site web local
-- Clément RUFFET : Application historique 
+- Clément RUFFET : Site Web / historique 
 - Thomas OLIVIER : EcoSonde 
 - Ruben BAROUX : Gestion de l'énergie 
 
