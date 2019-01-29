@@ -1,1 +1,3 @@
-https://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32f1-series/stm32f103/stm32f103c8.html
+STM : https://www.st.com/content/st_com/en/products/microcontrollers/stm32-32-bit-arm-cortex-mcus/stm32-mainstream-mcus/stm32f1-series/stm32f103/stm32f103c8.html 
+EEPROM : https://www.mouser.fr/ProductDetail/STMicroelectronics/M24C64-DRMN8TP-K?qs=sGAEpiMZZMuVhdAcoizlRfa%2fT8Wd8kLDGd1tx%252bf2wTU%3d
+
