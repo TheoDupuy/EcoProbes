@@ -1,1 +1,4 @@
 https://code.visualstudio.com/Download
+
+Doc installateur :
+https://code.visualstudio.com/docs/setup/setup-overview
