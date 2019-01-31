@@ -1,0 +1,11 @@
+Liens Php : https://www.w3schools.com/php/
+https://openclassrooms.com/fr/courses/918836-concevez-votre-site-web-avec-php-et-mysql
+
+Liens HTML : https://www.w3schools.com/html/
+http://glossaire.infowebmaster.fr/lettre-B/
+
+Liens CSS : https://www.w3schools.com/css/
+https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/1605060-mettez-en-place-le-css
+
+Liens JS : https://www.w3schools.com/js/
+https://openclassrooms.com/fr/courses/2984401-apprenez-a-coder-avec-javascript
