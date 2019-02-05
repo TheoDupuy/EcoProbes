@@ -6,8 +6,8 @@ Projet BTS SNir
 - Stella DAVION : Application Android 
 - Théo DUPUY : Site web local
 - Clément RUFFET : Site Web / historique 
-- Thomas OLIVIER : EcoSonde 
-- Ruben BAROUX : Gestion de l'énergie 
+- Thomas OLIVIER : EcoSonde / Gestion de l'énergie
+- Ruben BAROUX : EcoSonde / Gestion de l'énergie 
 
 ## Scrum Master : 
 Théo DUPUY
