@@ -5,29 +5,51 @@
 RF24 radio(10, 9) //pins CE, CSN
 RF24Network network(radio); //on cree un reseau appele network auquel on integre radio
 RF24Mesh mesh(radio, network);
+
+
 mesh.setNodeID(2); //on définit la nodeID à 2
-printf("start nodeID %d\n",mesh.getNodeID()); //affichage 
+printf("start nodeID %d\n",mesh.getNodeID()); //affichage du nodeID
 mesh.begin(); //demarrage
-const uint16_t this_node = 01;
-const uint16_t node00 = 00;
+//const uint16_t this_node = 02;
+//const uint16_t node00 = 00;
 
-void setup() {
-    if(!mesh.write(&displayTimer,'M',sizeof(displayTimer))){
-       
-      // If a write fails, check connectivity to the mesh network
-      if( ! mesh.checkConnection() ){
-        // The address could be refreshed per a specified timeframe or only when sequential writes fail, etc.
-        printf("Renewing Address\n");
+int main() 
+{
+  while(1)
+  {
+    if(!mesh.write(/*&data*/,'M'/*identifier*/,sizeof(/*data*/)))
+    {
+      // Si l'écriture a échoué, on vérifie la connexion
+      if( ! mesh.checkConnection()) 
+      {
+        // connexion échouée, renouvllement de l'adresse
+        printf("Renouvellement de l'adresse\n");
         mesh.renewAddress(); 
-      }else{
-        printf("Send fail, Test OK\n"); 
       }
-    }else{
-      printf("Send OK: %u\n",displayTimer);
+      else
+      {
+        printf("Envoi échoué, text connexion OK\n"); 
+      }
     }
+    else
+    {
+      printf("Send OK: %u\n",/*data*/);
+    }
+    delay(2);
   }
-  delay(1);
-  }
-return 0;
-
+  return 0;
 }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
