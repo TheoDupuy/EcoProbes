@@ -1,14 +1,13 @@
-#include <SPI.h>
-#include "RF24Mesh/RF24Mesh.h"  
-#include <RF24/RF24.h>
-#include <RF24Network/RF24Network.h>
+#include <Z:\info\projet\EcoProbes\EcoProbes\Mesh network\Mesh\MeshFinal\include\RF24Mesh.h>
+#include <RF24.h>
+#include <./RF24Network.h>
 
 RF24 radio(10, 9) //pins CE, CSN
 RF24Network network(radio); //on integre au réseau
 RF24Mesh mesh(radio, network);
 //...
 
-int main {
+int main() {
 /*Set a unique nodeID for this node.
 This value is stored in program memory, so is saved after loss of power.
 This should be called before mesh.begin()*/
@@ -32,6 +31,9 @@ This should be called before mesh.begin()*/
         switch(header.type)
         {
             case 'M': network.read(header, &incomingdata, sizeof(incomingdata));
+                        printf("Message: %lu , from 0%o \n ", incomingdata, header.from_node)
+                        break;
+            case 'N': network.read(header, &incomingdata, sizeof(incomingdata));
                         printf("Message: %lu , from 0%o \n ", incomingdata, header.from_node)
                         break;
             default : printf("error");
