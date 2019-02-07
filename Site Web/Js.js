@@ -5,12 +5,7 @@
 	
 	
 	function alerteSonde( var capteur , int nbsonde, float valeur, float tab[4]) {
-		/*var Temperaturesol =Valeur de la temperature du sol de la sonde 1 ;
-		var Temperatureamb =Valeur de la temperature ambiante de la sonde 1 ;
-		var Humiditesol =Valeur de l'humidité du sol de la sonde 1 ;
-		var Humiditeamb =Valeur de l'humiditer ambiante de la sonde 1 ;
-		var Niveaueau =Valeur du niveau de l'eau de la sonde 1 ;
-		var Luminositer = Valeur de la luminosité de la sonde 1*/ ;
+		
 		
 		float somme;
 		int i;
