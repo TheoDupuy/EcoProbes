@@ -19,10 +19,6 @@ body {
 
 }
 
-tr
-{
-    border: 1px solid black;
-}
 
 .Sonde{
     border: 5px outset rgb(0, 153, 51);
@@ -55,14 +51,54 @@ tr
 	padding-bottom: 3%
 }
 
+.grille {
+    display: grid;
+    grid-template-columns: 32.5% 32.5% 32.5%;
+    grid-template-rows: 15rem 15rem 10rem;
+    grid-gap: 1rem;
+} 
+h3{
+	text-align:center;
+	font-size: 150%;
+}
+
+.styled {
+    border: 3 outset;
+    line-height: 3;
+    padding: 0 5%;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #000066;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 7px;
+    background-color: #80ff80;
+    background-image: linear-gradient(to top right,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 3px 3px 4px rgba(255, 255, 255, .6),
+                inset -3px -3px 4px rgba(0, 0, 0, .6);
+}
 
 
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
 
+.a {
+  
+  display: block;
+  margin : auto;
 
-
-
-
-
+} 
+.centrer{
+	text-align : center;
+}
+.légende{
+	font-family: "Times New Roman", Times, serif;
+	text-shadow:3px 6px 6px rgba(0,0,0,0.3);
+}
 
 
 
