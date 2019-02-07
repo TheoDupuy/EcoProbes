@@ -1,71 +1,134 @@
-<scripts>
+	function init(){
+		tabtemp=[15,15,15,15];
+		
+		alerteCapteurTemp("Temperatureamb", 1 , 15459814659 , tabtemp);
+		
+		tabhumi=[35,35,35,35];
+		
+		AlerteCapteurHumi("Humiditeamb", 1 , 1149165 , tabhumi);
+	}
+	
+		
+	
+	
+	function alerteCapteurTemp( capteur ,  nbsonde,  valeurtemp, tabtemp) {
+		
+		
+		var sommetemp=0;
+		var i_temp;
+		var moyennetemp=15;
+		var y_temp = 5;
+		var Tabnbtemp = 4;
+		var starttemp;
+		var aberanttemp=true;
+		
+		
+		for(i_temp=0;i_temp < 4;i_temp ++){
+			if(tabtemp[i_temp]==0){
+				Tabnbtemp--;
+			}
+		}
 
-	function newsdonnee(float valeur)
+		if(Tabnbtemp==0){
+			Tabnbtemp++;
+			starttemp== true;
+			moyennetemp = valeurtemp;
+		}
 		
-	
-	
-	function alerteSonde( var capteur , int nbsonde, float valeur, float tab[4]) {
 		
-		
-		float somme;
-		int i;
-		float moyenne;
-		float y;
-		int Tabnb = 4;
-		boolean start;
-		boolean aberant=false;
-		
-		for(i=0;i<4;i++){
-			if(tab[i]==0){
-				Tabnb--;
+		if (valeurtemp < moyennetemp + y_temp && valeurtemp > moyennetemp - y_temp || starttemp == true){
+			for(i_temp=4; i_temp > 1 ; i_temp--){
+				tabtemp[i_temp-1]=tabtemp[i_temp-2];
+			}
+			tabtemp[0]=valeurtemp;
+			aberanttemp=false;
+			if(Tabnbtemp<4){
+				Tabnbtemp++;
 			}
 		}
-		if(Tabnb==0){
-			Tabnb++;
-			start== true;
+		for (i_temp=0; i_temp< 4 ;i_temp++){
+
+				sommetemp= sommetemp+ tabtemp[i_temp];
+				
 		}
-		for (i=0;i<Tabnb;i++){
-			if (valeur < moyenne + y && valeur > moyenne - y || start == true){
-				somme=somme+valeur;
-			}
-			else{
-				aberant=true;
-			}
-		}
-		moyenne = somme / Tabnb;
+		moyennetemp = sommetemp / Tabnbtemp;
+
 		
-		
-		
-		
-			numero de la sonde + valeur
-		
-		
-		
-		
-		if(aberant==true){
+		alert(Tabnbtemp);
+		alert(sommetemp);
+		alert(moyennetemp);
+		if(aberanttemp==true){
 			switch (capteur) {
 			
 				case 'Temperaturesol':
-					alert(" La température du sol de la sonde"+ nbsonde + " est anormale."); 
+					alert(" La température du sol de la sonde"+ nbsonde + " est anormale. Elle est de :" +valeurtemp); 
 					break;
 				case 'Temperatureamb' :
-					alert(" La température de l'air ambiant de la sonde "+ nbsonde + " est anormale."); 
+					alert(" La température de l'air ambiant de la sonde "+ nbsonde + " est anormale. Elle est de :" +valeurtemp); 
 					break;
-				case 'Humiditesol' :
-					alert(" L'humidité du sol de la sonde "+ nbsonde + " est anormale."); 
-					break;
-				case 'Humiditeamb':
-					alert(" L'humidité de l'air ambiant de la sonde "+ nbsonde + " est anormale."); 
-					break;
+				
 				case 'Niveaueau' :
-					alert(" Le niveau de l'eau de la sonde "+ nbsonde + " est anormale. "); 
+					alert(" Le niveau de l'eau de la sonde "+ nbsonde + " est anormale. Elle est de :" +valeur); 
 					break;
 				case 'Luminositer' :
-					alert(" La luminosité est de la sonde "+ nbsonde + " est anormale "+ valeur);
+					alert(" La luminosité est de la sonde "+ nbsonde + " est anormale Elle est de :" + valeur);
 					break;
-					
-				return capteur;
 			}
 		}
 	}
-</scripts>
+
+	function AlerteCapteurHumi( capteur , nbsonde,  valeurhumi, tabhumi) {
+	
+		var sommehumi= 0;
+		var i_humi;
+		var moyennehumi=45;
+		var y_humi = 20;
+		var Tabnbhumi = 4;
+		var starthumi;
+		var aberanthumi=true;
+		
+		
+		for(i_humi=0;i_humi < 4;i_humi ++){
+			if(tabhumi[i_humi]==0){
+				Tabnbhumi--;
+			}
+		}
+		
+		if(Tabnbhumi==0){
+			Tabnbhumi++;
+			starthumi== true;
+			moyennehumi = valeurhumi;
+		}
+		
+		
+		if (valeurhumi < moyennehumi + y_humi && valeurhumi > moyennehumi - y_humi || starthumi == true){
+			for(i_humi=4; i_humi > 1 ; i_humi--){
+				tabhumi[i_humi-1]=tabhumi[i_humi-2];
+			}
+			tabhumi[0]=valeurhumi;
+			aberanthumi=false;
+			if(Tabnbhumi<4){
+				Tabnbhumi++;
+			}
+		}
+		for (i_humi=0; i_humi< 4 ;i_humi++){
+
+				sommehumi= sommehumi+ tabhumi[i_humi];
+				
+		}
+		moyennehumi = sommehumi / Tabnbhumi;
+		//alert("Valeur de l'humiditer ambiante  : " +valeurhumi);
+		//alert("Moyenne de l'huimiditer ambiante  : " +moyennehumi);
+	
+		if(aberanthumi==true){
+			switch (capteur) {
+				case 'Humiditesol' :
+					alert(" L'humidité du sol de la sonde "+ nbsonde + " est anormale. Elle est de :" +valeurhumi); 
+					break;
+				case 'Humiditeamb':
+					alert(" L'humidité de l'air ambiant de la sonde "+ nbsonde + " est anormale. Elle est de :" +valeurhumi); 
+					break;
+							
+			}	
+		}
+}
