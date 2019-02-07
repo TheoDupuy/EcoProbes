@@ -1,33 +1,48 @@
-#include <RF24.h>
-#include <RF24Network.h>
 #include <SPI.h>
+#include "RF24Mesh/RF24Mesh.h"  
+#include <RF24/RF24.h>
+#include <RF24Network/RF24Network.h>
 
 RF24 radio(10, 9) //pins CE, CSN
-RF24Network network(radio); //on integre
-const uint16_t this_node = 00;
-const uint16_t node01 = 01;
-const uint16_t node02 = 02;
-const uint16_t node011 = 011;
-const uint16_t node021 = 021;
+RF24Network network(radio); //on integre au réseau
+RF24Mesh mesh(radio, network);
 //...
 
-void setup() {
-    SPI.begin();
-    radio.begin();
-    network.begin(90, this_node); // channel, adresse de la sonde
-}
+int main {
+/*Set a unique nodeID for this node.
+This value is stored in program memory, so is saved after loss of power.
+This should be called before mesh.begin()*/
+    mesh.setNodeID(0); //on met l'ID à 0 et identifie ainsi le maître
+    printf("debut\n");
+    mesh.begin(); // configure le réseau et demande une adresse
+    /*Paramétres par défauts: channel	The radio channel (1-127) default:97
+                            data_rate	The data rate (RF24_250KBPS,RF24_1MBPS,RF24_2MBPS) default:RF24_1MBPS
+                            timeout	How long to attempt address renewal in milliseconds default:60000*/ 
 
-void loop() {
-    network.update(); //met à jour le réseau
+
+    while(1)
+    {
+    mesh.update(); //met à jour le réseau
+    mesh.DHCP(); //permet de donner une config auto aux nodes, seulement appelé par le master
     while (network.available()) //on recupère les données
     {
         RF24NetworkHeader header; //cree un header
         unsigned long incomingdata;
-        network.read(header, &incomingdata, sizeof(incomingdata));
+        network.peek(header); //part à la recherche du prochain message
+        switch(header.type)
+        {
+            case 'M': network.read(header, &incomingdata, sizeof(incomingdata));
+                        printf("Message: %lu , from 0%o \n ", incomingdata, header.from_node)
+                        break;
+            default : printf("error");
+                      break;
+        }
+        
         //ranger la donnée
-        if (header.from_node == /*)
+        //if (header.from_node == )
 
     }
-    
+    delay(2);
+    }
     
 }

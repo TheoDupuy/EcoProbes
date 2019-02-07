@@ -5,7 +5,7 @@
 RF24 radio(10, 9) //pins CE, CSN
 RF24Network network(radio); //on cree un reseau appele network auquel on integre radio
 RF24Mesh mesh(radio, network);
-mesh.setNodeID(1); //on définit la nodeID à 0
+mesh.setNodeID(2); //on définit la nodeID à 2
 printf("start nodeID %d\n",mesh.getNodeID()); //affichage 
 mesh.begin(); //demarrage
 const uint16_t this_node = 01;
