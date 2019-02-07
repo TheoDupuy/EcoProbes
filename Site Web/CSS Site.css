@@ -4,7 +4,8 @@ body {
 	background-repeat : no-repeat;
 	background-position : center center;
 	background-size : cover;
-	width : 100%;
+	text-align: center;
+	margin-right: 0px;
 }
 
 .titre
@@ -53,9 +54,10 @@ body {
 
 .grille {
     display: grid;
-    grid-template-columns: 32.5% 32.5% 32.5%;
-    grid-template-rows: 15rem 15rem 10rem;
-    grid-gap: 1rem;
+    grid-template-columns: 31.5% 31.5% 31.5%;
+    grid-template-rows: 15rem 15rem ;
+    grid-gap: 2%;
+	text-align: center;
 } 
 h3{
 	text-align:center;
@@ -65,7 +67,8 @@ h3{
 .styled {
     border: 3 outset;
     line-height: 3;
-    padding: 0 5%;
+    padding: 0;
+	margin-bottom : 0;
     font-size: 1.5rem;
     text-align: center;
     color: #000066;
@@ -98,13 +101,41 @@ h3{
 .légende{
 	font-family: "Times New Roman", Times, serif;
 	text-shadow:3px 6px 6px rgba(0,0,0,0.3);
+	border-radius: 8px;
+	box-shadow : 2px 2px grey;
+}
+footer {
+    display: flex;
+	flex-direction;
+    justify-content: center;
+	width: 100%;
+	padding-top: 1%
+
 }
 
+#TextBot
+{
+	background-color: #cc0000;
+	color: #fff;
+	width: 80%;
+	border-radius: 8px;
+	box-shadow : 2px 2px grey;
+}
 
+.styled2{
+	
+}
+.cut{
+	width : 95%;
+}
 
-
-
-
+#spec
+{
+	display: flex;
+	flex-direction;
+	justify-content: center;
+	padding-top : 2%;
+}
 
 
 
