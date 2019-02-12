@@ -1,7 +1,33 @@
-body {
+@media all and (max-device-width: 480px)
+
+{
+
+	body {
 	color:black;
 	background: url(wallpaper.png);
 	background-repeat : no-repeat;
+	background-position : center center;
+	text-align: center;
+	margin-right: 0px;
+}
+.titre
+{
+	font-size: 170%;
+	font-family: DejaVu Sans Mono, monospace;
+	font-style: normal;
+	font-weight: bold;
+	font-stretch: expanded;
+	text-align: center;
+	color: #cc0000;
+
+}
+
+}
+
+body {
+	color:black;
+	background: url(wallpaper.png);
+	background-repeat : repeat;
 	background-position : center center;
 	background-size : cover;
 	text-align: center;
@@ -34,8 +60,6 @@ body {
     margin-right:10%;
     margin-left:10%;
 	text-align: center;
-	
-
 }
 .NomSonde{
     padding-left: 60%;
@@ -136,7 +160,6 @@ footer {
 	justify-content: center;
 	padding-top : 2%;
 }
-
 
 
 
