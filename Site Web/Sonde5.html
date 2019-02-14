@@ -4,9 +4,50 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="sonde.css" />
   <title>Sonde 5</title>
-  <script src="script.js"></script>
+  <script src="Js.js"></script>
 </head>
 <body>
-  <h1>Voici la sonde 5 détaillée :</h1>
+  <h1 class="first">Voici la sonde 5 détaillée :</h1>
+  
+  <canvas id="myChart" width="10" ></canvas>
+<script>
+var ctx = document.getElementById("myChart").getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ["Temp.Sol", "Temp.Amb", "Humidité.Sol", "Humidité.Amb", "Luminosité", "Niveau eau"],
+        datasets: [{
+            label: 'Données collectées',
+            data: [10, 12, 10, 10, 13, 10],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255,99,132,1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero:true
+                }
+            }]
+        }
+    }
+});
+</script>
 </body>
 </html>
