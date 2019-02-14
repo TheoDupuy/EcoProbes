@@ -1,11 +1,16 @@
 	function init(){
 		tabtemp=[15,15,15,15];
 		
+<<<<<<< HEAD
 		alerteCapteurTemp("Temperatureamb", 1 , 15 , tabtemp);
+=======
+		alerteCapteurTemp("Temperatureamb", 1 , 5 , tabtemp);
+>>>>>>> aa4c09a643af45e0152a9468c804bcf79f8fdef0
 		
+		test(true,true,24,5);
 		tabhumi=[35,35,35,35];
 		
-		AlerteCapteurHumi("Humiditeamb", 1 , 26 , tabhumi);
+		AlerteCapteurHumi("Humiditeamb", 1 , 24 , tabhumi);
 	}
 	
 		
@@ -129,4 +134,26 @@
 		}
 }
 
+<<<<<<< HEAD
 
+=======
+function test (aberanthumi,aberanttemp,valeurhumi,valeurtemp) {
+	var test = document.getElementById("test");
+		test.style="display:none";
+		console.log(aberanthumi);
+		if((aberanthumi ==true) && (aberanttemp == true)){
+			
+			test.style="";
+			test.innerHTML= valeurhumi +" "+ valeurtemp ;
+		}
+		else if((aberanthumi == true) && (aberanttemp == false )){
+			test.style="";
+			test.innerHTML= valeurhumi;
+		}
+		else if((aberanthumi ==false) && ( aberanttemp == true)){
+			test.style="";
+			test.innerHTML = valeurtemp;
+		}
+		
+}
+>>>>>>> aa4c09a643af45e0152a9468c804bcf79f8fdef0
