@@ -2,13 +2,12 @@
 
 		tabtemp=[15,15,15,15];
 		
-		alerteCapteurTemp("Temperatureamb", 1 , 10 , tabtemp);
+		alerteCapteurTemp("Temperatureamb", 1 , 5 , tabtemp);
 		
-
-		
+		test(true,true,24,5);
 		tabhumi=[35,35,35,35];
 		
-		AlerteCapteurHumi("Humiditeamb", 1 , 26 , tabhumi);
+		AlerteCapteurHumi("Humiditeamb", 1 , 24 , tabhumi);
 	}
 	
 		
@@ -132,6 +131,22 @@
 		}
 }
 
-function test () {
-			var test = document.getElementById("test").InnerHTML("Test");
+function test (aberanthumi,aberanttemp,valeurhumi,valeurtemp) {
+	var test = document.getElementById("test");
+		test.style="display:none";
+		console.log(aberanthumi);
+		if((aberanthumi ==true) && (aberanttemp == true)){
+			
+			test.style="";
+			test.innerHTML= valeurhumi +" "+ valeurtemp ;
+		}
+		else if((aberanthumi == true) && (aberanttemp == false )){
+			test.style="";
+			test.innerHTML= valeurhumi;
+		}
+		else if((aberanthumi ==false) && ( aberanttemp == true)){
+			test.style="";
+			test.innerHTML = valeurtemp;
+		}
+		
 }
