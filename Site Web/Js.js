@@ -147,20 +147,20 @@
 
 function test (aberanthumi,aberanttemp,valeurhumi,valeurtemp) {
 	var test = document.getElementById("test");
+	var testtxt = document.getElementById("testtxt");
 		test.style="display:none";
-		console.log(aberanthumi);
 		if((aberanthumi ==true) && (aberanttemp == true)){
 			
 			test.style="";
-			test.innerHTML= "Humidité : "+valeurhumi +" "+ "Température : "+valeurtemp ;
+			testtxt.innerHTML= "Humidité : "+valeurhumi +" "+ "Température : "+valeurtemp ;
 		}
 		else if((aberanthumi == true) && (aberanttemp == false )){
 			test.style="";
-			test.innerHTML= valeurhumi;
+			testtxt.innerHTML= valeurhumi;
 		}
 		else if((aberanthumi ==false) && ( aberanttemp == true)){
 			test.style="";
-			test.innerHTML = valeurtemp;
+			testtxt.innerHTML = valeurtemp;
 		}
 		
 }

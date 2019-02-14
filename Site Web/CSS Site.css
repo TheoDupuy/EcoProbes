@@ -55,6 +55,18 @@ body {
 	padding-right : 100px;
 }
 
+#test
+{
+	display : flex;
+	flex-direction : row;
+	justify-content : center;
+	background-color : red;
+}
+#testtxt
+{
+	background-color : blue;
+}
+
 
 .Sonde{
     border: 5px outset rgb(0, 153, 51);
