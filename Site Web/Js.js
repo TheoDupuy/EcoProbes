@@ -1,7 +1,10 @@
 	function init(){
+
 		tabtemp=[15,15,15,15];
 		
-		alerteCapteurTemp("Temperatureamb", 1 , 15 , tabtemp);
+		alerteCapteurTemp("Temperatureamb", 1 , 10 , tabtemp);
+		
+
 		
 		tabhumi=[35,35,35,35];
 		
@@ -129,4 +132,6 @@
 		}
 }
 
-
+function test () {
+			var test = document.getElementById("test").InnerHTML("Test");
+}
