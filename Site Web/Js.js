@@ -1,11 +1,11 @@
 	function init(){
 		tabtemp=[15,15,15,15];
 		
-		alerteCapteurTemp("Temperatureamb", 1 , 15459814659 , tabtemp);
+		alerteCapteurTemp("Temperatureamb", 1 , 15 , tabtemp);
 		
 		tabhumi=[35,35,35,35];
 		
-		AlerteCapteurHumi("Humiditeamb", 1 , 1149165 , tabhumi);
+		AlerteCapteurHumi("Humiditeamb", 1 , 26 , tabhumi);
 	}
 	
 		
@@ -53,10 +53,6 @@
 		}
 		moyennetemp = sommetemp / Tabnbtemp;
 
-		
-		alert(Tabnbtemp);
-		alert(sommetemp);
-		alert(moyennetemp);
 		if(aberanttemp==true){
 			switch (capteur) {
 			
@@ -132,3 +128,5 @@
 			}	
 		}
 }
+
+
