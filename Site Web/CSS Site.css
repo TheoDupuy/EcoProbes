@@ -1,7 +1,5 @@
 @media all and (max-device-width: 480px)
 
-
-
 	body {
 	color:black;
 	background: url(wallpaper.png);
@@ -21,7 +19,6 @@
 	color: #cc0000;
 
 }
-
 
 
 body {
@@ -134,7 +131,6 @@ footer {
     justify-content: center;
 	width: 100%;
 	padding-top: 1%
-
 }
 
 #TextBot
@@ -159,7 +155,7 @@ footer {
 }
 
 .bouton input[type="button"] {
-    color:#08233e;
+    color:white;
     font:DejaVu Sans Mono, monospace;
     font-size:90%;
 	padding : 15px;
@@ -169,7 +165,7 @@ footer {
     background-color:#cc0000;
     border:3px outset #ad1f18;
     border-radius:10px;
-    border-bottom:3px solid #cc0000;
+    border-bottom:3px solid black;
     box-shadow:inset 0 1px 0 rgba(255,255,255,0.5);
     display:block;
     width:30%;
