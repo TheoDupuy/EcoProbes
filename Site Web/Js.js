@@ -115,8 +115,7 @@
 				
 		}
 		moyennehumi = sommehumi / Tabnbhumi;
-		//alert("Valeur de l'humiditer ambiante  : " +valeurhumi);
-		//alert("Moyenne de l'huimiditer ambiante  : " +moyennehumi);
+
 	
 		if(aberanthumi==true){
 			switch (capteur) {
