@@ -1,1 +1,8 @@
-Réaliser d'une moyenne pondérer qui affiche une alerte si le résultat est abérant.
+Réalisation d'une moyenne pondérer qui affiche une alerte si le résultat est abérant.
+
+Utiliser un while (1) pour empecher la fin du traitement
+
+
+
+
+Idée pour la fonction cateur d'humidité : au lieu de faire la meme formule que le capteur de temperature test de juste comparer la dernier valeur acquis a celle enregistrer avant.

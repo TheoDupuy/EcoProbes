@@ -1,0 +1,21 @@
+
+
+h1.first{
+font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+text-align : center;
+text-decoration: underline;
+text-decoration-color: red;
+}
+
+}
+#body{ 
+   height: 100%;
+}
+html{
+	height: 120%;
+	background-image: linear-gradient(to right top, #4510b3, #0061e4, #008ce5, #00afca, #00cdb0, #27d08b, #5dd059, #8fcc00, #b2b000, #cb9100, #db6e00, #e34410); */
+	
+}
+#myChart{
+	height: 10px;
+}
