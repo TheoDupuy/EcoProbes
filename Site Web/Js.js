@@ -2,9 +2,9 @@
 
 		tabtemp=[15,15,15,15];
 		
-		alerteCapteurTemp("Temperatureamb", 1 , 16 , tabtemp);
+		alerteCapteurTemp("Temperatureamb", 1 , 15 , tabtemp);
 		
-		test(false,true,26,16);
+		Affichage(false,false,26,16);
 		tabhumi=[35,35,35,35];
 		
 		AlerteCapteurHumi("Humiditeamb", 1 , 26 , tabhumi);
@@ -130,7 +130,7 @@
 		}
 }
 
-function test (aberanthumi,aberanttemp,valeurhumi,valeurtemp) {
+function Affichage (aberanthumi,aberanttemp,valeurhumi,valeurtemp) {
 	var test = document.getElementById("test");
 	var testtxt = document.getElementById("testtxt");
 		test.style="display:none";
