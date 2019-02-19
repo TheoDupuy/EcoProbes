@@ -1,4 +1,3 @@
-
 	function init(){
 
 		tabtemp=[15,15,15,15];
