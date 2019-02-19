@@ -9,12 +9,35 @@
         <link rel="stylesheet" href="CSS Site.css" />
 
         <title>EcoProbes</title>
+		  <style>
+		  
+     [class*='bloc-']{
+      border : none;
+     }
+    .bloc-Droit{
+     
+      width: 75%;
+      height: 450px;  
+	  padding-left:10%; 
+	  padding-right:10%; 
+    }
+    
+    .box{
+      display:flex;
+    }
 
+    
+    </style>
     </head>
 
     <body>
 		<div class="titre"><h1>EcoProbes : Valeurs acceptables</h1></div>
-
+		
+		<div class="bloc-Droit">
+            <a class="weatherwidget-io" href="https://forecast7.com/fr/43d240d89/boussan/" data-label_1="BOUSSAN" data-font="Arial Black" data-icons="Climacons Animated" data-theme="orange" >BOUSSAN</a>
+		<script>
+		!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+		</script>
 		<div class="Sonde">
 
 			<h1><U>Sonde 1</U> : Parcelle Troupeau</h1>
@@ -88,6 +111,8 @@
 </table>
 		</div>
 
+            </div>
+		
 			<hr></hr>
 
 		<div class="Sonde">
@@ -388,58 +413,3 @@
     </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	</body>
