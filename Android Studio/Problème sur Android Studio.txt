@@ -1,0 +1,3 @@
+Le TAG n'est pas un nfc 
+Le manageMyconnectedsocket(socket)
+ligne 97  "bluetoothAdapter.listenUsingRfcommWithServiceRecord("NAME",new UUID(0,0));"
