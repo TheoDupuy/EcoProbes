@@ -1,0 +1,3 @@
+humidite = 100%, en fait, il pleut !
+
+temperature = Bonjour M.Bernauer, 33 degres, allons nous baigner.
