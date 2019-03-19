@@ -1,0 +1,84 @@
+<!doctype html>
+<head>
+<link rel="stylesheet" href="CSS Site.css" />
+<title>Example</title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+	text-align:center;
+  }
+  .outer-col-1 {
+    background:forestgreen;
+    flex: 1;
+  }
+  .outer-col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+	background:greenyellow;
+  }
+  .inner-row {
+    display: flex;
+    flex-direction: row;
+	text-align:center;
+  }
+  .inner-col {
+    flex: 4;
+  }
+  .inner-row article {
+    min-height: 60vh;
+  }
+  .inner-row aside {
+    background:mediumseagreen;
+    flex: 1;
+  }
+  header, footer {
+    background:lightgreen;
+    height: 20vh;
+	text-align:center;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+</style>
+</head>
+<body>
+  <nav class="outer-col-1"><h3>Navigation sur les pages du site EcoProbes</h3>
+	<p>Le bouton suivant permet d'acc&eacute;der &agrave; la page avec les donn&eacute;es telles que la m&eacute;t&eacute;o, la date ... </p>
+	<div class="bouton">
+	<U><a href="Site EcoProbes.html" target="_blank"> <input type="button" value="Globale"> </a></U>
+	</div>
+	<p>Le bouton suivant permet d'acc&eacute;der &agrave; la page avec les donn&eacute;es telles que la m&eacute;t&eacute;o, la date ... </p>
+	<div class="bouton">
+	<U><a href="Sonde1.html" target="_blank"> <input type="button" value="M&eacute;t&eacute;o"> </a></U>
+	</div>
+	<p>Le bouton suivant permet d'acc&eacute;der &agrave; la page avec les donn&eacute;es telles que la m&eacute;t&eacute;o, la date ... </p>
+	<div class="bouton">
+	<U><a href="Site EcoProbes.html" target="_blank"> <input type="button" value="Valeurs"> </a></U>
+	</div>
+	<p>Le bouton suivant permet d'acc&eacute;der &agrave; la page avec les donn&eacute;es telles que la m&eacute;t&eacute;o, la date ... </p>
+	<div class="bouton">
+	<U><a href="Site EcoProbes.html" target="_blank"> <input type="button" value="Sonde 1"> </a></U>
+	</div></nav>
+	
+  <div class="outer-col-2">
+  	<header><h1>Page d'accueil</h1></header>
+    <div class="inner-row">
+      <div class="inner-col">
+    	<U><h2><article>La disposition des sondes sur la propri&eacute;t&eacute; :<br><br>
+		<img src="exvue.jpg" alt="" height=% width=75%/>
+		
+		
+		</article></h2></U>
+  		<footer>Projet r&eacute;alis&eacute; par des &eacute;tudiants de Limayrac</footer>
+      </div>
+    	<aside><h3>Photos des sondes plac&eacute;es</h3></aside>
+    </div>
+  </div>
+</body>
