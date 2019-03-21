@@ -1,15 +1,22 @@
-
-@media screen and (max-width: 600px) {
-	background-image : linear-gradient(black,red);
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+   flex-direction: column;
+  }
+ }
+ 
+@media screen and (min-width: 200px) and (max-width: 640px) {
+  .tel{
+    display: none;
+  }
+.liens{
+	display : none;
 }
-	/* body { */
-	/* color:black; */
-	/* background: url(wallpaper.png); */
-	/* background-repeat : no-repeat; */
-	/* background-position : center center; */
-	/* text-align: center; */
-	/* margin-right: 0px; */
-/* } */
+.logo{
+	width:85%;
+	height:85%;
+}
+  
+}
 .titre
 {
 	font-size: 170%;
@@ -195,6 +202,142 @@ footer {
     width:30%;
 	text-align:center;
 
-	
+}
+* {
+  box-sizing: border-box;
 }
 
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  display: flex;
+  padding: 60px;
+  text-align: center;
+  flex-direction : row;
+  justify-content:center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: yellow;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color:#1abc9c;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-image: linear-gradient(to top, #009933, #02a23c, #03ac46, #04b54f, #03bf59, #13c85e, #1fd062, #28d967, #3ae367, #49ec67, #58f667, #66ff66);	
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background:#333;
+}
+
+/* Permet de faire les boutons de lien avec les sondes */
+.btn-group .button {
+  background-color: #4CAF50; /* Green */
+  border: 1px solid green;
+  color: black;
+  padding: 45px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+}
+
+.btn-group .button:not(:last-child) {
+  border-bottom: none; 
+  /* Prevent double borders */
+}
+
+.btn-group .button:hover {
+  background-color: #99ff99;
+}
+/*Permet de faire clignoter les caractères choisis*/
+.blink {
+	-webkit-animation: blink .75s linear infinite;
+	-moz-animation: blink .75s linear infinite;
+	-ms-animation: blink .75s linear infinite;
+	-o-animation: blink .75s linear infinite;
+	 animation: blink .75s linear infinite;
+}
+@-webkit-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-moz-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-o-keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	50.01% { opacity: 0; }
+	100% { opacity: 0; }
+}

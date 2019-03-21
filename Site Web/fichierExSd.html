@@ -1,199 +1,50 @@
-<!--<!doctype html>
-<head>
-  <meta charset="utf-8">
-  <title>SD vers Site Web</title> 
-</head>
-<body>
-<h1>Sd vers Web</h1>
-<object data='testSd.txt'  type="text/html"></object>
-</div>
-</body>
-</html>-->
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+<title>Page Accueil</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="CSS Site.css" />
 <style>
-* {
-  box-sizing: border-box;
-}
-
-/* Style the body */
-body {
-  font-family: Arial;
-  margin: 0;
-}
-
-/* Header/logo Title */
-.header {
-  display: flex;
-  padding: 60px;
-  text-align: center;
-  flex-direction : row;
-  justify-content:center;
-  background: #1abc9c;
-  color: white;
-}
-
-/* Style the top navigation bar */
-.navbar {
-  display: flex;
-  background-color: #333;
-}
-
-/* Style the navigation bar links */
-.navbar a {
-  color: white;
-  padding: 14px 20px;
-  text-decoration: none;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Change color on hover */
-.navbar a:hover {
-  background-color: yellow;
-  color: black;
-}
-
-/* Column container */
-.row {  
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
-  flex: 30%;
-  background-color:#1abc9c;
-  padding: 20px;
-}
-
-/* Main column */
-.main {
-  flex: 70%;
-  background-image: linear-gradient(to top, #009933, #02a23c, #03ac46, #04b54f, #03bf59, #13c85e, #1fd062, #28d967, #3ae367, #49ec67, #58f667, #66ff66);	
-  padding: 20px;
-}
-
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background:#333;
-}
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row, .navbar {   
-    flex-direction: column;
-  }
-}
-.btn-group .button {
-  background-color: #4CAF50; /* Green */
-  border: 1px solid green;
-  color: white;
-  padding: 45px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  width: 100%;
-  display: block;
-}
-
-.btn-group .button:not(:last-child) {
-  border-bottom: none; /* Prevent double borders */
-}
-
-.btn-group .button:hover {
-  background-color: #99ff99;
-}
-.blink {
-	-webkit-animation: blink .75s linear infinite;
-	-moz-animation: blink .75s linear infinite;
-	-ms-animation: blink .75s linear infinite;
-	-o-animation: blink .75s linear infinite;
-	 animation: blink .75s linear infinite;
-}
-@-webkit-keyframes blink {
-	0% { opacity: 1; }
-	50% { opacity: 1; }
-	50.01% { opacity: 0; }
-	100% { opacity: 0; }
-}
-@-moz-keyframes blink {
-	0% { opacity: 1; }
-	50% { opacity: 1; }
-	50.01% { opacity: 0; }
-	100% { opacity: 0; }
-}
-@-ms-keyframes blink {
-	0% { opacity: 1; }
-	50% { opacity: 1; }
-	50.01% { opacity: 0; }
-	100% { opacity: 0; }
-}
-@-o-keyframes blink {
-	0% { opacity: 1; }
-	50% { opacity: 1; }
-	50.01% { opacity: 0; }
-	100% { opacity: 0; }
-}
-@keyframes blink {
-	0% { opacity: 1; }
-	50% { opacity: 1; }
-	50.01% { opacity: 0; }
-	100% { opacity: 0; }
-}
 </style>
 </head>
 <body>
 
 <!-- Note -->
-<div style="background:red;padding:3px">
-</div>
+<div style="background:red;padding:3px"></div>
 
 <!-- Header -->
-<div class="header">
-  <img class=logo src="logoill.png">
-</div>
+<div class="header"><img class=logo src="logoill.png"></div>
 
 <!-- Note -->
-<div style="background:red;padding:3px">
-</div>
-
+	<div style="background:red;padding:3px"></div>
+	
 <!-- Navigation Bar -->
 <div class="navbar">
-  <a href="Site EcoProbes.html">Valeurs acceptables de la région</a>
-  <a href="http://www.meteofrance.com/previsions-meteo-france/boussan/31420">Lien vers le site de Meteo France</a>
-  <a href="https://rnm.franceagrimer.fr/prix?BOVINS">Lien vers les prix et cours du marché de la viande bovine</a> 
- 
+	<a href="Site EcoProbes.html">Valeurs acceptables</a>
+	<a class="liens" href="http://www.meteofrance.com/previsions-meteo-france/boussan/31420">Lien vers le site de Meteo France</a>
+	<a class="liens" href="https://rnm.franceagrimer.fr/prix?BOVINS">Lien vers les prix et cours du marché de la viande bovine</a>
 </div>
 
 <!-- Flexbox -->
 <div class="row">
-  <div class="side">
-  <h2 class="tab blink">Informations à propos d'aujourd'hui</h2>
-  <h3><U>Date et M&eacutet&eacuteo</U></h3>
-  	<div style="background: none repeat scroll 0 0 #FFF; box-shadow: 0 0 0 1px #DCBEA0; margin: 20px auto; overflow: hidden; position: relative; width: 170px; padding: 0;">
-<div style="width: 100%; height: 165px;">
-<div style="width: 100%; height: 36px; background: #E53B47;"> <a title="Calendrier" href="http://icalendrier.fr/" rel="" style="display: block; color: #fff; height: 36px; line-height: 36px; font-family: 'Trebuchet Ms', Arial; font-size: 18px; margin: 0 auto; width: 150px; text-align: center;">iCalendrier.fr</a>
+	<div class="side">
+<!-- Caractères qui clignotent -->
+<div class="tel">
+<h2 class="tab blink">Informations</h2>
 </div>
-<div style="padding: 0; margin: 0 auto; position: relative;">
-<div class="today" style="display: block; height: 50px; left: 22px; position: absolute; top: 31px; width: 126px;"> <span style="font-family: 'Trebuchet MS'; color: #444; font-size: 14px; left: 0; line-height: 24px; top: -24px; width: 100%; display: block; position: absolute; text-align: center;"> <script
+<!-- Titre Date Météo -->
+<div class="tel">
+<h3><U>Date et M&eacutet&eacuteo</U></h3>
+</div>
+<!-- Widget calendrier -->
+<div class="tel">
+<div style="background: none repeat scroll 0 0 #FFF; box-shadow: 0 0 0 1px #DCBEA0; margin: 20px auto; overflow: hidden; position: relative; width: 170px; padding: 0;">
+	<div style="width: 100%; height: 165px;">
+		<div style="width: 100%; height: 36px; background: #E53B47;"> <a title="Calendrier" href="http://icalendrier.fr/" rel="" style="display: block; color: #fff; height: 36px; line-height: 36px; font-family: 'Trebuchet Ms', Arial; font-size: 18px; margin: 0 auto; width: 150px; text-align: center;">iCalendrier.fr</a>
+	</div>
+	<div style="padding: 0; margin: 0 auto; position: relative;">
+		<div class="today" style="display: block; height: 50px; left: 22px; position: absolute; top: 31px; width: 126px;"> <span style="font-family: 'Trebuchet MS'; color: #444; font-size: 14px; left: 0; line-height: 24px; top: -24px; width: 100%; display: block; position: absolute; text-align: center;"> <script
                                     type="text/javascript">
                                          (function(){window.glbf=false;window.caldate=new Date;var e=["Dimanche","Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi"];document.write(e[window.caldate.getDay()])})()
                                     </script> - Sem. <script type="text/javascript">
@@ -210,406 +61,354 @@ body {
                                 	</script> </span> <span style="white-space: nowrap; font-family: 'Trebuchet MS'; color: #444; display: block; font-size: 13px; left: 0; line-height: 18px; position: absolute; text-align: center; top: 70px; width: 170px; left:-22px;"> <span id="mphabg" style="display: inline-block; width: 18px; height:18px; background-position: 0 0; vertical-align: middle; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAAAAASCAAAAACRVQi3AAABuUlEQVR4Ac2W0Y2sMBRDpz/qSVOuxpW4hdkh1n2+UTTKCr2PzcdoMXZ8yBLg9Z5DpN5/YkwgjOszBsIkjFuIYhMWhRgDAJvHY/HgdsWjW2hdTs32AtLEmUiVoyUKpdg006Xcs7hTVuoPxeP8J7t4xtIFyXUwkK427EIBfuxWaMElISwAeeasC/uJWTGUE+l3qvowgUYHGkq7C0m3GyhEw8AeKHklstLMlquSlRpXiF64lpHzFUFbMk+Pm7PMxZh2e+zzcJ5WUzDqUlKv9yvtZWLH81XVcdpG8ZaiDuRUFHpqsoA86NRS+MpBMaKddxl3oGsFgpiDHZFOWwgQjNiAxg7EDjR+C0SmvTwNUV+ArOA/AOkJkB4B6dEKQdCTfxm0AR1vank9Tjd1XyKn9psaWoHoVC88bPvavGVqO+i07bVte6/ZcdsfH4yOHB6MNmY4ZaWZsT0YuawAzq8OoSvVXtSqJctvmKPMCjoboPK0Pn15uZaDuWwWkKC8gOF2WkGZk7IZmRosIHtmSuHZPz/SdgHoF30T4l+pYyAAxQOSawogrpEUAQ4DNk9W4/sHGslNiSmxU+rsWWb+AaGLe/kWU09NAAAAAElFTkSuQmCC);"> </span> <span style="display: inline-block; width: auto; height:18px; vertical-align: middle;"> <script type="text/javascript">
 										function moon_day(e){var t=function(e){return e-Math.floor(e)};var n=e.getJulian();var r=e.getFullYear();var i=3.14159265/180;var s,o,u,a,f,l,c,h,p,d;s=Math.floor((r-1900)*12.3685);o=(r-1899.5)/100;u=o*o;a=o*o*o;f=2415020+29*s;l=1178e-7*u-1.55e-7*a+(.75933+.53058868*s)-(837e-6*o+335e-6*u);c=360*t(s*.08084821133)+359.2242-333e-7*u-347e-8*a;h=360*t(s*.07171366128)+306.0253+.0107306*u+1236e-8*a;p=360*t(s*.08519585128)+21.2964-.0016528*u-239e-8*a;var v=0;var m=0;while(m<n){var g=l+1.530588*v;var y=(c+v*29.10535608)*i;var b=(h+v*385.81691806)*i;var w=(p+v*390.67050646)*i;g-=.4068*Math.sin(b)+(.1734-393e-6*o)*Math.sin(y);g+=.0161*Math.sin(2*b)+.0104*Math.sin(2*w);g-=.0074*Math.sin(y-b)-.0051*Math.sin(y+b);g+=.0021*Math.sin(2*y)+.001*Math.sin(2*w-b);g+=.5/1440;d=m;m=f+28*v+Math.floor(g);v++}return(n-d)/29.53059}Date.prototype.getJulian=function(){return this/864e5-this.getTimezoneOffset()/1440+2440587.5};var today=new Date;var names=["Nouvelle lune","Premier croissant","Premier quartier","Gibbeuse croissante","Pleine lune","Gibbeuse décroissante","Dernier quartier","Dernier croissant","Nouvelle lune"];var bgpos=[0,-18,-36,-54,-72,-90,-108,-126,0];var moonphIndex=Math.floor((moon_day(today)+.0625)*8);window.document.getElementById("mphabg").style.backgroundPosition=bgpos[moonphIndex]+"px 0";document.write(names[moonphIndex])
 									</script> </span> </span>
-</div>
-</div>
-</div>
-</div>
-<HR> 
+				</div>
+			</div>
+		</div>
+	</div>
+	<HR>
+	</div>
+ 
+<!-- Widget Météo -->
+	<div class="tel">
     <a class="weatherwidget-io" href="https://forecast7.com/fr/43d240d89/boussan/" data-label_1="BOUSSAN" data-font="Arial Rounded MT Bold" data-icons="Climacons Animated" data-days="3" data-highcolor="#f90909" data-lowcolor="#1018ec" data-suncolor="#f1e61a" data-raincolor="#0d79d1" >BOUSSAN</a>
 		<script>
 			!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 		</script>
-<HR>
+		<HR>
+	</div>
+<!-- Widget GoogleMaps -->
+<div class="tel">
 <div style="width: 100%"><iframe width="100%" height="600" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=Boussan+(Votre%20village)&amp;ie=UTF8&amp;t=h&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/map-my-route/">Map a route</a></iframe></div>
-<HR> 
-<div class="btn-group">
-	<p>Liens vers les graphiques avec les données des sondes :</p>
-  <input class="button" type="button" value="Sonde 1" onclick="window.location.href='Sonde1.html'"/> </form>
-  </br>
-  <input class="button" type="button" value="Sonde 2" onclick="window.location.href='Sonde2.html'"/> </form>
-  </br>
-  <input class="button" type="button" value="Sonde 3" onclick="window.location.href='Sonde3.html'"/> </form>
-  </br>
-  <input class="button" type="button" value="Sonde 4" onclick="window.location.href='Sonde4.html'"/> </form>
-  </br>
-  <input class="button" type="button" value="Sonde 5" onclick="window.location.href='Sonde5.html'"/> </form>
+<HR>
 </div>
-  </div>
-  <div class="main">
-    <h1>Sondes</h1>
-    <div class="Sonde">
 
+<!-- Liens vers graphes   -->
+<div class="btn-group">
+	<p><h3>Liens vers les graphiques avec les données des sondes</h3></p>
+		<input class="button" type="button" value="Sonde 1" onclick="window.location.href='Sonde1.html'"/> </form>
+	</br>
+		<input class="button" type="button" value="Sonde 2" onclick="window.location.href='Sonde2.html'"/> </form>
+	</br>
+		<input class="button" type="button" value="Sonde 3" onclick="window.location.href='Sonde3.html'"/> </form>
+	</br>
+		<input class="button" type="button" value="Sonde 4" onclick="window.location.href='Sonde4.html'"/> </form>
+	</br>
+		<input class="button" type="button" value="Sonde 5" onclick="window.location.href='Sonde5.html'"/> </form>
+	</div>
+</div>
+<!-- </div>   -->
+<div class="main">
+	<h1>Sondes</h1>
+<!-- Sonde n°1 -->
+		<div class="Sonde">
 			<h2><U>Sonde 1</U> : Parcelle Troupeau</h2>
-
 			<table class="tableau centre">
+				<tbody> <!-- Corps du tableau -->
+					<tr>
 
-   <tbody> <!-- Corps du tableau -->
+					   <th class="entete">Type de capteur</th>
+					   <th class="entete">Valeurs :</th>
 
-       <tr>
+					</tr>
 
-           <th class="entete">Type de capteur</th>
+					<tr>
 
-           <th class="entete">Valeurs :</th>
+					   <td>Température Sol</td>
+					   <td>Min : 18°C / Max : 27°C</td>
 
-       </tr>
+					</tr>
 
-       <tr>
+					<tr>
 
-           <td>Température Sol</td>
+						<td>Température Ambiante</td>
+						<td>Min : 9°C / Max : 35°C</td>
 
-           <td>Min : 18°C / Max : 27°C</td>
+					</tr>
 
-       </tr>
+					<tr>
 
-       <tr>
+						<td>Humidité Sol</td>
+						<td>Min : 15% / Max : 65%</td>
 
-           <td>Température Ambiante</td>
+					</tr>
+	
+					<tr>
 
-           <td>Min : 9°C / Max : 35°C</td>
+						<td>Humidité Ambiante</td>
+						<td>Min : 20% / Max : 80%</td>
 
-       </tr>
+					</tr>
 
-       <tr>
+					<tr>
 
-           <td>Humidité Sol</td>
+						<td>Niveau d'eau</td>
+						<td>Min : 15cm / Max : 150cm</td>
 
+					</tr>
 
-           <td>Min : 15% / Max : 65%</td>
+					<tr>
 
-       </tr>
+						<td>Luminosité</td>
+						<td>Min : 5Lux / Max : 75000Lux</td>
 
-       <tr>
+					</tr>
 
-           <td>Humidité Ambiante</td>
-
-
-           <td>Min : 20% / Max : 80%</td>
-
-       </tr>
-
-       <tr>
-
-           <td>Niveau d'eau</td>
-
-
-           <td>Min : 15cm / Max : 150cm</td>
-
-       </tr>
-
-       <tr>
-
-           <td>Luminosité</td>
-
-
-           <td>Min : 5Lux / Max : 75000Lux</td>
-
-       </tr>
-
-   </tbody>
-
-</table>
+				</tbody>
+		</table>
 		</div>
-    <p>Cette sonde situ&eacute;e sur la parcelle troupeau regroupe 6 capteurs.</p>
-    <br>
-    <div class="Sonde">
-
-				<h2><U>Sonde 2</U> : Parcelle Boisée</h2>
-
-			<table class="tableau centre">
-
-   <tbody> <!-- Corps du tableau -->
-   
-         <tr>
-
-           <th class="entete">Type de capteur</th>
-
-           <th class="entete">Valeurs :</th>
-
-       </tr>
-
-       <tr>
-
-           <td>Température Sol</td>
-
-           <td>Min : 18°C / Max : 27°C</td>
-
-       </tr>
-
-       <tr>
-
-           <td>Température Ambiante</td>
-
-           <td>Min : 9°C / Max : 35°C</td>
-
-       </tr>
-
-       <tr>
-
-           <td>Humidité Sol</td>
-
-           <td>Min : 15% / Max : 65%</td>
-
-       </tr>
-
-       <tr>
-
-           <td>Humidité Ambiante</td>
-
-           <td>Min : 20% / Max : 80%</td>
-
-       </tr>
-
-       <tr>
-
-           <td>Niveau d'eau</td>
-
-           <td>Min : 15cm / Max : 150cm</td>
-
-       </tr>
-
-       <tr>
-
-           <td>Luminosité</td>
-
-           <td>Min : 5Lux / Max : 75000Lux</td>
-
-       </tr>
-
-   </tbody>
-
-</table>
-		</div>
-		<p>Cette sonde situ&eacute;e sur la parcelle bois&eacute;e regroupe 6 capteurs.</p>
-    <br>
+		
+    <p><h4>Cette sonde situ&eacute;e sur la parcelle troupeau regroupe 6 capteurs.</h4></p>
+<!-- Sonde n°2 -->    
 	<div class="Sonde">
+			<h2><U>Sonde 2</U> : Parcelle Boisée</h2>
+			<table class="tableau centre">
+				<tbody> <!-- Corps du tableau -->
+					<tr>
+						
+						<th class="entete">Type de capteur</th>
+						<th class="entete">Valeurs :</th>
 
+					   </tr>
+
+					<tr>
+
+					   <td>Température Sol</td>
+					   <td>Min : 18°C / Max : 27°C</td>
+
+					</tr>
+
+					<tr>
+
+					   <td>Température Ambiante</td>
+					   <td>Min : 9°C / Max : 35°C</td>
+
+				   </tr>
+
+				   <tr>
+
+					   <td>Humidité Sol</td>
+					   <td>Min : 15% / Max : 65%</td>
+
+				   </tr>
+
+				   <tr>
+
+					   <td>Humidité Ambiante</td>
+					   <td>Min : 20% / Max : 80%</td>
+
+				   </tr>
+
+				   <tr>
+
+					   <td>Niveau d'eau</td>
+					   <td>Min : 15cm / Max : 150cm</td>
+
+				   </tr>
+
+				   <tr>
+
+					   <td>Luminosité</td>
+					   <td>Min : 5Lux / Max : 75000Lux</td>
+
+					</tr>
+				</tbody>
+		</table>
+		</div>
+		
+	<p><h4>Cette sonde situ&eacute;e sur la parcelle bois&eacute;e regroupe 6 capteurs.</h4></p>
+<!-- Sonde n°3 -->    
+	<div class="Sonde">
 		<h2><U>Sonde 3</U> : Champ plein Sud</h2>
-		
-			<table class="tableau centre">
+		<table class="tableau centre">
+			<tbody> <!-- Corps du tableau -->
+				<tr>
 
-   <tbody> <!-- Corps du tableau -->
+				   <th class="entete">Type de capteur</th>
+				   <th class="entete">Valeurs :</th>
 
-       <tr>
+			   </tr>
 
-           <th class="entete">Type de capteur</th>
+			   <tr>
 
-           <th class="entete">Valeurs :</th>
+				   <td>Température Sol</td>
+				   <td>Min : 18°C / Max : 27°C</td>
 
-       </tr>
+			   </tr>
 
-       <tr>
+			   <tr>
 
-           <td>Température Sol</td>
+				   <td>Température Ambiante</td>
+				   <td>Min : 9°C / Max : 35°C</td>
 
-           <td>Min : 18°C / Max : 27°C</td>
+			   </tr>
 
-       </tr>
+			   <tr>
 
-       <tr>
+				   <td>Humidité Sol</td>
+				   <td>Min : 15% / Max : 65%</td>
 
-           <td>Température Ambiante</td>
+			   </tr>
 
-           <td>Min : 9°C / Max : 35°C</td>
+			   <tr>
 
-       </tr>
+				   <td>Humidité Ambiante</td>
+				   <td>Min : 20% / Max : 80%</td>
 
-       <tr>
+			   </tr>
 
-           <td>Humidité Sol</td>
+			   <tr>
 
-           <td>Min : 15% / Max : 65%</td>
+				   <td>Niveau d'eau</td>
+				   <td>Min : 15cm / Max : 150cm</td>
 
-       </tr>
+			   </tr>
 
-       <tr>
+			   <tr>
 
-           <td>Humidité Ambiante</td>
+				   <td>Luminosité</td>
+				   <td>Min : 5Lux / Max : 75000Lux</td>
 
-           <td>Min : 20% / Max : 80%</td>
-
-       </tr>
-
-       <tr>
-
-           <td>Niveau d'eau</td>
-
-           <td>Min : 15cm / Max : 150cm</td>
-
-       </tr>
-
-       <tr>
-
-           <td>Luminosité</td>
-
-           <td>Min : 5Lux / Max : 75000Lux</td>
-
-       </tr>
-
-   </tbody>
-   
-</table>
-		</div>
-		<p>Cette sonde situ&eacute;e sur le champ plein Sud regroupe 6 capteurs.</p>
-    <br>
+				</tr>
+			</tbody>
+	</table>
+	</div>
+	
+	<p><h4>Cette sonde situ&eacute;e sur le champ plein Sud regroupe 6 capteurs.</h4></p>
+<!-- Sonde n°4 -->
 	<div class="Sonde">
-			<table class="tableau centre">
-
-   <thead> <!-- En-tête du tableau -->
-
-       <tr>
-
-           <h2><U>Sonde 4</U>: Champ plein Est</h2>
-
-       </tr>
-
-   </thead>
-
-   <tbody> <!-- Corps du tableau -->
-
-       <tr>
-
-           <th class="entete">Type de capteur</th>
-
-           <th class="entete">Valeurs :</th>
-
-       </tr>
-
-       <tr>
-
-           <td>Température Sol</td>
-
-           <td>Min : 18°C / Max : 27°C</td>
-
-       </tr>
-
-       <tr>
-
-           <td>Température Ambiante</td>
-
-           <td>Min : 9°C / Max : 35°C</td>
-
-       </tr>
-
-       <tr>
-
-           <td>Humidité Sol</td>
-
-           <td>Min : 15% / Max : 65%</td>
-
-       </tr>
-
-       <tr>
-
-           <td>Humidité Ambiante</td>
-
-           <td>Min : 20% / Max : 80%<td>
-
-       </tr>
-
-       <tr>
-
-           <td>Niveau d'eau</td>
-
-           <td>Min : 15cm / Max : 150cm</td>
-
-       </tr>
-
-       <tr>
-
-           <td>Luminosité</td>
-
-           <td>Min : 5Lux / Max : 75000Lux</td>
-
-       </tr>
-
-   </tbody>
-
-</table>
-		</div>
-<p>Cette sonde situ&eacute;e sur le champ plein Est regroupe 6 capteurs.</p>
-    <br>
-	<div class="Sonde">
-			<table class="tableau centre">
-
-   <thead> <!-- En-tête du tableau -->
-
-       <tr>
-
-           <h2><U>Sonde 5</U>: Champ Blé /Maïs</h2>
-
-       </tr>
-
-   </thead>
-
-   <tbody> <!-- Corps du tableau -->
-
-       <tr>
-
-           <th class="entete">Type de capteur</th>
-
-           <th class="entete">Valeurs :</th>
-
-       </tr>
-
-       <tr>
-
-           <td>Température Sol</td>
-
-           <td>Min : 18°C / Max : 27°C</td>
-
-       </tr>
-
-       <tr>
-
-           <td>Température Ambiante</td>
-
-           <td>Min : 9°C / Max : 35°C</td>
-
-       </tr>
-
-       <tr>
-
-           <td>Humidité Sol</td>
-
-           <td>Min : 15% / Max : 65%</td>
-
-       </tr>
-
-       <tr>
-
-           <td>Humidité Ambiante</td>
-
-           <td>Min : 20% / Max : 80%</td>
-
-       </tr>
-
-       <tr>
-
-           <td>Niveau d'eau</td>
-
-           <td>Min : 15cm / Max : 150cm</td>
-
-       </tr>
-
-       <tr>
-
-           <td>Luminosité</td>
-
-           <td>Min : 5Lux / Max : 75000Lux</td>
-
-       </tr>
-
-   </tbody>
-
-</table>
-		</div>
-		<p>Cette sonde situ&eacute;e sur le champ de blé/maïs regroupe 6 capteurs.</p>	
+	<table class="tableau centre">
+		<thead> <!-- En-tête du tableau -->
+			<tr>
+				<h2><U>Sonde 4</U>: Champ plein Est</h2>
+			</tr>
+		</thead>
 		
-<!-- Footer -->
+			<tbody> <!-- Corps du tableau -->
+				<tr>
+
+				   <th class="entete">Type de capteur</th>
+				   <th class="entete">Valeurs :</th>
+				</tr>
+
+				<tr>
+
+				   <td>Température Sol</td>
+				   <td>Min : 18°C / Max : 27°C</td>
+
+				</tr>
+
+				<tr>
+
+					<td>Température Ambiante</td>
+					<td>Min : 9°C / Max : 35°C</td>
+
+				</tr>
+
+				<tr>
+
+				   <td>Humidité Sol</td>
+				   <td>Min : 15% / Max : 65%</td>
+
+			   </tr>
+
+			   <tr>
+
+				   <td>Humidité Ambiante</td>
+				   <td>Min : 20% / Max : 80%<td>
+
+			   </tr>
+
+				<tr>
+
+				   <td>Niveau d'eau</td>
+				   <td>Min : 15cm / Max : 150cm</td>
+
+				</tr>
+
+				<tr>
+
+				   <td>Luminosité</td>
+				   <td>Min : 5Lux / Max : 75000Lux</td>
+
+				</tr>
+			</tbody>
+	</table>
+	</div>
+	
+	<p><h4>Cette sonde situ&eacute;e sur le champ plein Est regroupe 6 capteurs.</h4></p>
+<!-- Sonde n°5 -->
+	<div class="Sonde">
+	<table class="tableau centre">
+		<thead> <!-- En-tête du tableau -->
+			<tr>
+				<h2><U>Sonde 5</U>: Champ Blé /Maïs</h2>
+			</tr>
+		</thead>
+			<tbody> <!-- Corps du tableau -->
+				<tr>
+
+					<th class="entete">Type de capteur</th>
+					<th class="entete">Valeurs :</th>
+
+				</tr>
+
+				<tr>
+
+				   <td>Température Sol</td>
+				   <td>Min : 18°C / Max : 27°C</td>
+
+				</tr>
+
+				<tr>
+
+				   <td>Température Ambiante</td>
+				   <td>Min : 9°C / Max : 35°C</td>
+
+				</tr>
+
+				<tr>
+
+				   <td>Humidité Sol</td>
+				   <td>Min : 15% / Max : 65%</td>
+
+				</tr>
+
+				<tr>
+
+				   <td>Humidité Ambiante</td>
+				   <td>Min : 20% / Max : 80%</td>
+
+				</tr>
+
+				<tr>
+
+				   <td>Niveau d'eau</td>
+				   <td>Min : 15cm / Max : 150cm</td>
+
+				</tr>
+
+				<tr>
+
+				   <td>Luminosité</td>
+				   <td>Min : 5Lux / Max : 75000Lux</td>
+
+			   </tr>
+			</tbody>
+	</table>
+	</div>
+	
+		<p><h4>Cette sonde situ&eacute;e sur le champ de blé/maïs regroupe 6 capteurs.</h4></p>	
+	</div>	
+	</div>
+	
+<!-- Footer qui contient la possibilité d'envoyer un mail au concepteur du site -->
+<div class="tel">
 <div class="footer">
   <footer>
-		<a href="mailto:theo.dupuy@limayrac.fr"> Mail : Cliquez ici si vous avez des questions au sujet du site et de son fonctionnement</a>
+		<a href="mailto:theo.dupuy@limayrac.fr"> Mail : Cliquez ici si vous avez des questions au sujet du site et de son fonctionnement</a></div>
+		
   </footer>
+ </div>
 </div>
 
 </body>
