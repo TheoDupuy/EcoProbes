@@ -1,4 +1,3 @@
-
 /*
  Copyright (C) 2011 J. Coliz <maniacbug@ymail.com>
 
@@ -40,7 +39,7 @@
   // The configure script detects device and copies the correct includes.h file to /utility/includes.h
   // This behavior can be overridden by calling configure with respective parameters
   // The includes.h file defines either RF24_RPi, MRAA, LITTLEWIRE or RF24_SPIDEV and includes the correct RF24_arch_config.h file
-  #include "utility/includes.h"
+  //#include "Z:\info\projet\EcoProbes\EcoProbes\Mesh network\Mesh\MeshFinal\lib\RF24-master\utility\includes.h"
 
 //ATTiny  
 #elif defined(__AVR_ATtiny25__) || defined(__AVR_ATtiny45__) || defined(__AVR_ATtiny85__) || defined(__AVR_ATtiny24__) || defined(__AVR_ATtiny44__) || defined(__AVR_ATtiny84__) || defined(__AVR_ATtiny2313__) || defined(__AVR_ATtiny4313__) || defined(__AVR_ATtiny861__)  

@@ -1,4 +1,3 @@
-
 /*
  Copyright (C) 2011 James Coliz, Jr. <maniacbug@ymail.com>
 
@@ -84,7 +83,8 @@
 #elif defined(XMEGA)
 	#include "../../rf24lib/rf24lib/RF24_config.h"
 #else
-    #include <RF24_config.h>
+    #include <Z:\info\projet\EcoProbes\EcoProbes\Mesh network\Mesh\MeshFinal\lib\RF24-master\RF24_config.h>
+    
 #endif
 
   #if !defined (ARDUINO_ARCH_AVR)

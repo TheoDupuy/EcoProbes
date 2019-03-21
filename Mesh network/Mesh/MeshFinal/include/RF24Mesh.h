@@ -1,9 +1,3 @@
-
-
-
-
-
-
 #ifndef __RF24MESH_H__
 #define __RF24MESH_H__
 
@@ -37,15 +31,15 @@
 #endif
 
 
-#include "Z:\info\projet\EcoProbes\EcoProbes\Mesh network\Mesh\MeshFinal\lib\RF24Mesh-master\RF24Mesh_config.h"
+#include "Z:/info/projet/EcoProbes/EcoProbes/Mesh network/Mesh/MeshFinal/lib/RF24Mesh-master/RF24Mesh_config.h"
 
 #if defined (__linux) && !defined(__ARDUINO_X86__)
   #include <RF24/RF24.h>
   #include <RF24Network/RF24Network.h>
   #define RF24_LINUX
 #else
-  #include <RF24.h>
-  #include <RF24Network.h>
+  #include <Z:\info\projet\EcoProbes\EcoProbes\Mesh network\Mesh\MeshFinal\include\RF24.h>
+  #include <Z:/info/projet/EcoProbes/EcoProbes/Mesh network/Mesh/MeshFinal/include/RF24Network.h>
 #endif
 
   #include <stddef.h>

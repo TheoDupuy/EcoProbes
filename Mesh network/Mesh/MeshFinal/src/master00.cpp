@@ -1,6 +1,6 @@
-#include <Z:\info\projet\EcoProbes\EcoProbes\Mesh network\Mesh\MeshFinal\include\RF24Mesh.h>
-#include <RF24.h>
-#include <./RF24Network.h>
+#include <Z:/info/projet/EcoProbes/EcoProbes/Mesh network/Mesh/MeshFinal/include/RF24Mesh.h>
+// #include <./RF24.h>
+//#include <./RF24Network.h>
 
 RF24 radio(10, 9) //pins CE, CSN
 RF24Network network(radio); //on integre au réseau
