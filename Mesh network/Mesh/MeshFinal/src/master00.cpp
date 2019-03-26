@@ -1,8 +1,11 @@
 #include <Z:/info/projet/EcoProbes/EcoProbes/Mesh network/Mesh/MeshFinal/include/RF24Mesh.h>
 // #include <./RF24.h>
 //#include <./RF24Network.h>
+#include <stdio.h>
+#include<stdlib.h>
+#include <unistd.h>
 
-RF24 radio(10, 9) //pins CE, CSN
+RF24 radio(10, 9); //pins CE, CSN
 RF24Network network(radio); //on integre au réseau
 RF24Mesh mesh(radio, network);
 //...
@@ -31,10 +34,10 @@ This should be called before mesh.begin()*/
         switch(header.type)
         {
             case 'M': network.read(header, &incomingdata, sizeof(incomingdata));
-                        printf("Message: %lu , from 0%o \n ", incomingdata, header.from_node)
+                        printf("Message: %lu , from 0%o \n ", incomingdata, header.from_node);
                         break;
             case 'N': network.read(header, &incomingdata, sizeof(incomingdata));
-                        printf("Message: %lu , from 0%o \n ", incomingdata, header.from_node)
+                        printf("Message: %lu , from 0%o \n ", incomingdata, header.from_node);
                         break;
             default : printf("error");
                       break;
@@ -44,7 +47,7 @@ This should be called before mesh.begin()*/
         //if (header.from_node == )
 
     }
-    delay(2);
+    //delay(2);
     }
     
 }
