@@ -39,7 +39,7 @@
   #define RF24_LINUX
 #else
   #include <Z:\info\projet\EcoProbes\EcoProbes\Mesh network\Mesh\MeshFinal\include\RF24.h>
-  #include <Z:/info/projet/EcoProbes/EcoProbes/Mesh network/Mesh/MeshFinal/include/RF24Network.h>
+  #include <Z:\info\projet\EcoProbes\EcoProbes\Mesh network\Mesh\MeshFinal\include\RF24Network.h>
 #endif
 
   #include <stddef.h>
