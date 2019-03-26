@@ -29,7 +29,7 @@ int main()
       }
       else
       {
-        printf("Envoi échoué, text connexion OK\n"); 
+        printf("Envoi échoué, test connexion OK\n"); 
       }
     }
     else
