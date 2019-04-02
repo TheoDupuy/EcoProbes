@@ -1,3 +1,4 @@
+using namespace std;
 #include <Z:/info/projet/EcoProbes/EcoProbes/Mesh network/Mesh/MeshFinal/include/RF24Mesh.h>
 //#include <RF24.h>
 //#include <./RF24Network.h>

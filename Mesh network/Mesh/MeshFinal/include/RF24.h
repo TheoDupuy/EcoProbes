@@ -16,6 +16,7 @@
 #define __RF24_H__
 
 #include "Z:/info/projet/EcoProbes/EcoProbes/Mesh network/Mesh/MeshFinal/lib/RF24-master/RF24_config.h"
+#include <Z:\info\projet\EcoProbes\EcoProbes\Mesh network\Mesh\MeshFinal\lib\RF24-master\RF24.cpp>
 
 #if defined (RF24_LINUX) || defined (LITTLEWIRE)
   #include "utility/includes.h"
