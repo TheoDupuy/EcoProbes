@@ -1,0 +1,3 @@
+https://www.aranacorp.com/fr/votre-arduino-communique-avec-le-module-hc-05/
+
+https://dzone.com/articles/enabling-nucleo-st-f401re-mbed
