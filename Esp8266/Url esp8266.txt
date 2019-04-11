@@ -1,0 +1,6 @@
+https://battomicro.wordpress.com/2015/09/30/realisation-une-ouverture-de-portail-connectee-a-internet-avec-un-esp8266-wifi/
+https://forums.futura-sciences.com/electronique/736780-page-web-generee-via-esp8266-arduino-probleme.html
+https://caron.ws/diy-cartes-microcontroleurs/les-commandes-at/
+https://circuitdigest.com/microcontroller-projects/interfacing-esp8266-with-stm32f103c8-stm32-to-create-a-webserver
+https://community.arm.com/developer/ip-products/system/b/embedded-blog/posts/getting-started-with-nucleo-f411re-and-esp8266
+https://tttapa.github.io/ESP8266/Chap02%20-%20Hardware.html
